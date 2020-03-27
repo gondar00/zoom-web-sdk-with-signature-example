@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+  <title>NAMI | Interactive support groups online</title>
+  <meta charset="utf-8" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+    #zmmtg-root {
+      background: none !important;
+      position: relative !important;
+    }
+  </style>
+</head>
+<body class="bg-grey-lighter text-base text-grey-darkest font-normal relative">
+  <div class="h-2 bg-primary"></div>
+  <div class="container mx-auto p-8">
+    <div class="mx-auto max-w-sm">
+      <div class="py-10 text-center">
+        <img src='https://www.nami.org/cmstemplates/nami/resources/images/logo.png' />
+      </div>
+      <div class="bg-white rounded shadow">
+        <div class="border-b py-8 font-bold text-black text-center text-xl tracking-widest uppercase">
+          Welcome back!
+        </div>
+        <form class="bg-grey-lightest px-10 py-10">
+          <div class="mb-3">
+            <input class="border w-full p-3" id="display_name" name="display_name" type="text"
+              placeholder="Please enter display name">
+          </div>
+          <div class="mb-6">
+            <input class="border w-full p-3" id="meeting_number" name="meeting_number" type="text"
+              placeholder="Please enter meeting number">
+          </div>
+          <div class="flex">
+            <button id="join_meeting"
+              class="bg-primary  w-full p-4 text-sm uppercase font-bold tracking-wider">
+              Login
+            </button>
+          </div>
+        </form>
+        <div class="border-t px-10 py-6">
+          <div class="flex justify-between">
+            <a href="#" class="font-bold text-primary hover:text-primary-dark no-underline">Don't have an account?</a>
+            <a href="#" class="text-grey-darkest hover:text-black no-underline">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://source.zoom.us/1.7.2/lib/vendor/react.min.js"></script>
+  <script src="https://source.zoom.us/1.7.2/lib/vendor/react-dom.min.js"></script>
+  <script src="https://source.zoom.us/1.7.2/lib/vendor/redux.min.js"></script>
+  <script src="https://source.zoom.us/1.7.2/lib/vendor/redux-thunk.min.js"></script>
+  <script src="https://source.zoom.us/1.7.2/lib/vendor/jquery.min.js"></script>
+  <script src="https://source.zoom.us/1.7.2/lib/vendor/lodash.min.js"></script>
+  <script src="https://source.zoom.us/zoom-meeting-1.7.2.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
